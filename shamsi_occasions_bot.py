@@ -139,7 +139,7 @@ def format_message(jdate: jdatetime.date, data: dict) -> str:
     events = data.get("events", [])
     is_holiday = data.get("is_holiday", False)
 
-    lines = [f"📅 تاریخ امروز: ، {header}"]
+    lines = [f"📅 تاریخ امروز ، {header}"]
     if is_holiday:
         lines.append("🔴 امروز تعطیل رسمی است")
     lines.append("")
